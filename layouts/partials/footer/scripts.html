@@ -1,6 +1,7 @@
 <script>window.__public_path__='{{- "assets/js/" | absURL -}}'</script>
 
 <script src='{{ print "assets/js/" .Site.Data.assets.main.js | absURL }}'></script>
+<script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
 
 {{- range .Site.Params.assets.customJS -}}
   <script src='{{ . | relURL }}'></script>
